@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import UserDetails from './Components/UserDetails/UserDetails';
+import AccountCreation from './Components/AccountCreation/AccountCreation';
 function App() {
   const [tab, setTab] = useState('userDetails');
 
@@ -27,9 +28,9 @@ function App() {
         <Button label="User Details" value="userDetails" />
         <Button label="Account Creation" value="accountCreation" />
       </div>
-      <div style={{ marginTop: '20px', maxWidth: '600px', padding: '20px' }}>
-        {tab === 'userDetails' && <div>User Details Component</div>}
-        {tab === 'accountCreation' && <div>Account Creation Component</div>}
+      <div >
+        {tab === 'userDetails' && <UserDetails/>}
+        {tab === 'accountCreation' && <AccountCreation/>}
       </div>
     </div>
   );

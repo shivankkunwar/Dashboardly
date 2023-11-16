@@ -1,0 +1,56 @@
+.table-responsive {
+    
+    overflow-x: auto;
+   
+    
+   
+
+  }
+  .userdetails-outer{
+    width: 90vw;
+  }
+  
+  
+  
+  .table-responsive th, .table-responsive td {
+    white-space: nowrap;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .table-responsive table, .table-responsive thead, .table-responsive tbody, .table-responsive th, .table-responsive td, .table-responsive tr {
+      display: block;
+    }
+  
+    .table-responsive thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    .table-responsive tr { margin-bottom: 1rem; }
+  
+    .table-responsive td {
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%;
+    }
+  
+    .table-responsive td:before {
+      position: absolute;
+      top: 0;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+  
+    .table-responsive td:nth-of-type(1):before { content: "Username"; }
+    .table-responsive td:nth-of-type(2):before { content: "Email"; }
+    .table-responsive td:nth-of-type(3):before { content: "Phone"; }
+    .table-responsive td:nth-of-type(4):before { content: "ID"; }
+    .table-responsive td:nth-of-type(5):before { content: "Creation Date"; }
+  }
+  .email{
+    overflow-x: auto
+  }
